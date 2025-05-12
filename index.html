@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+  <title>Welcome!</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+<div class="universal-container">
+  <div class="canvas-holder" id="threejs-canvas"></div>
+  <div class="content-section">
+    <div class="overlay-text">
+      <h1 class="title">Hi, Gazach.</h1>
+      <p class="subtitle">I am <span id="age"></span> years old programmer who live in Indonesia.</p>
+      <div class="button">
+        <a href="#conteiner-1" class="button1">More about me here!</a>
+      </div>
+    </div>
+    <div class="conteiner-1" id="conteiner-1">
+        <h1 class="conteiner-1-aboutme">About me!</h1>
+        <div class="about-flex">
+            <div class="about1">
+                <img src="https://avatars.githubusercontent.com/u/92112218?v=4" alt="">
+                <p class="abouttext"> 
+                    Hello! I'm Gaza Lazuardi Chandra, a <span id="ages"></span>-year-old developer from Bekasi, Java, Indonesia. <br><br>
+
+                    I discovered my passion for both technical creation and artistic expression at an early age - finding equal joy in solving programming challenges as I do in sketching digital artwork. <br><br>
+
+                    One of my biggest dreams is to establish a game studio where I can pour out all my creativity wholeheartedly, without anyone forcing me.
+                </p>
+            </div>
+            <div class="about2">
+                <div class="skills-section">
+                    <h3>Current Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" aria-label="C++ Proficiency">
+                            <i class="fab fa-cplusplus"></i>
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar" style="--proficiency: 32%"></div>
+                        </div>
+                        <div class="skill-item" aria-label="JavaScript Proficiency">
+                            <i class="fab fa-js-square"></i>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar" style="--proficiency: 40%"></div>
+                        </div>
+                        <div class="skill-item" aria-label="PHP Proficiency">
+                            <i class="fab fa-php"></i>
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar" style="--proficiency: 75%"></div>
+                        </div>
+                        <div class="skill-item" aria-label="Web Development">
+                            <i class="fas fa-code"></i>
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar" style="--proficiency: 90%"></div>
+                        </div>
+                        <div class="skill-item" aria-label="Rust Learning">
+                            <i class="fas fa-gears"></i>
+                            <span class="skill-name">Rust</span>
+                            <div class="skill-bar" style="--proficiency: 25%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cyberpunkbg">
+        <div class="cyber-divider">
+        <div class="cyber-progress"></div>
+        <div class="scan-line"></div>
+    </div>
+</div>
+    <div class="conteiner-2">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid" id="github-projects"></div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="copyright">
+                © <span id="current-year"></span> Gaza Lazuardi Chandra. All rights reserved.
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/gazach" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="github.svg" alt="GitHub">
+                </a>
+                <a href="https://x.com/gaza_ch" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="twitter.svg" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/gaza.dev/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="insta.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <script type="module" src="./project.js"></script>
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
