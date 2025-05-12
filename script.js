@@ -26,22 +26,4 @@ updateAge();
 setInterval(updateAge, 3600000);
 
 
-        repos.forEach(({ data: repo }) => {
-            const projectCard = `
-                <div class="project-card">
-                    <h3 class="project-title">/${repo.name}</h3>
-                    <p class="project-desc">${repo.description || 'No description available'}</p>
-                    <div class="project-meta">
-                        <span class="project-lang">${repo.language || 'Various'}</span>
-                        <div class="project-stats">
-                            <span>★ ${repo.stargazers_count}</span>
-                            <span>⧐ ${repo.forks_count}</span>
-                        </div>
-                    </div>
-                    <a href="${repo.html_url}" target="_blank" class="project-link">
-                        View ${repo.owner.login === orgName ? 'Org' : 'Personal'} Repository
-                    </a>
-                </div>
-            `;
-            projectsContainer.innerHTML += projectCard;
-        });
+document.getElementById('current-year').textContent = new Date().getFullYear();
