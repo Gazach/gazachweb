@@ -10,7 +10,7 @@ const projects = [
         name: "MoonLight Engine",
         description: "Lua 2D Game engine that written in C++ (still prototype)",
         language: "C++",
-        url: "https://github.com/Echo2D/Echo2D",
+        url: "https://github.com/Gazach/Moonlight-Engine",
         isOrg: false,
     },
 
