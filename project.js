@@ -7,8 +7,8 @@ const projects = [
         isOrg: false
     },
     {
-        name: "Echo2D",
-        description: "Echo2D is a 2D game engine made with PHP (still prototype)",
+        name: "MoonLight Engine",
+        description: "Lua 2D Game engine that written in C++ (still prototype)",
         language: "C++",
         url: "https://github.com/Echo2D/Echo2D",
         isOrg: false,
