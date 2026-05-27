@@ -1,9 +1,9 @@
 const projects = [
     {
-        name: "EchoScript",
-        description: "Simple Interpeter programing language (still in develop :3)",
-        language: "C++",
-        url: "https://github.com/Gazach/EchoScript",
+        name: "Lunaris",
+        description: "☀️ Simple Interpeter programing language inspired by Crafting interpreter book by Robert Nystrom",
+        language: "C",
+        url: "https://github.com/Gazach/Lunaria",
         isOrg: false
     },
     {
