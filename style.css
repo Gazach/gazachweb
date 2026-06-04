@@ -697,3 +697,97 @@ button, .button1, .social-icon {
         padding-left: 1rem;
     }
 }
+
+    /* Universal error page */
+    .error-body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 20% 15%, rgba(0, 255, 255, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(112, 255, 160, 0.12), transparent 35%),
+        #070707;
+      color: #ffffff;
+    }
+
+    .error-wrapper {
+      width: min(92vw, 860px);
+      padding: 1.25rem;
+      box-sizing: border-box;
+    }
+
+    .error-card {
+      border: 1px solid rgba(0, 255, 255, 0.28);
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 14px;
+      padding: clamp(1.3rem, 2.8vw, 2.2rem);
+      box-shadow:
+        0 0 0 1px rgba(112, 255, 160, 0.14) inset,
+        0 20px 45px rgba(0, 0, 0, 0.38);
+    }
+
+    .error-code {
+      margin: 0;
+      color: rgba(0, 255, 255, 0.95);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .error-title {
+      margin: 0.35rem 0 1rem;
+      font-size: clamp(1.8rem, 4.7vw, 3rem);
+      line-height: 1.1;
+    }
+
+    .error-message {
+      margin: 0;
+      max-width: 64ch;
+      color: rgba(255, 255, 255, 0.84);
+      line-height: 1.6;
+    }
+
+    .error-actions {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      align-items: center;
+    }
+
+    .error-actions .button1 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-width: 190px;
+    }
+
+    .error-link {
+      color: #70ffa0;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(112, 255, 160, 0.5);
+      padding-bottom: 2px;
+    }
+
+    .error-link:hover {
+      color: #ffffff;
+      border-bottom-color: #ffffff;
+    }
+
+    @media (max-width: 640px) {
+      .error-wrapper {
+        width: 100%;
+        padding: 1rem;
+      }
+
+      .error-card {
+        border-radius: 10px;
+      }
+
+      .error-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
